@@ -13,10 +13,10 @@ class LexNode:
 	def getNextVals(self):
 		return self.out.keys()
 
-	def getNextNode(self, val):
+	def getNext(self, val):
 		return self.out[val.lower()]
 
-	def inNext(self, val):
+	def hasNext(self, val):
 		return val.lower() in self.out
 
 	def getVal(self):
